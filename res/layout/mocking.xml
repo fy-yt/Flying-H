@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background" 
+   >
+
+  <ImageView
+           android:id="@+id/compass_img"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+  
+           android:src="@drawable/zongtou1" />
+
+   <Button
+       android:id="@+id/wb"
+       android:layout_width="80dp"
+       android:layout_height="50dp"
+       android:layout_above="@+id/compass_img"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true"
+       android:layout_margin="5dp"
+       android:layout_alignRight="@+id/compass_img"
+       android:background="#a86747"
+       android:text="中国野鸟速查"
+       android:textSize="20sp" />
+
+   <Button
+       android:id="@+id/ma_1"
+       android:layout_width="80dp"
+       android:layout_height="180dp"
+       android:layout_above="@+id/back"
+       android:layout_alignLeft="@+id/compass_img"
+       android:layout_alignParentRight="true"
+       android:layout_below="@+id/mb"
+       android:layout_margin="5dp"
+       android:background="#a86747"
+       android:text="带图片的马大爷"
+       android:textSize="20sp" />
+
+   <Button
+       android:id="@+id/mb"
+       android:layout_width="80dp"
+       android:layout_height="180dp"
+       android:layout_alignBottom="@+id/compass_img"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentTop="true"
+       android:layout_toRightOf="@+id/wb"
+       android:background="#9b571a"
+             android:layout_margin="5dp"
+       android:text="Mocking\nBird"
+       android:textSize="20sp" />
+
+   <Button
+       android:id="@+id/eb"
+       android:layout_width="180dp"
+       android:layout_height="90dp"
+       android:layout_alignParentBottom="true"
+       android:layout_alignTop="@+id/compass_img"
+       android:layout_toLeftOf="@+id/ma_1"
+       android:background="#9b571a"
+             android:layout_margin="5dp"
+       android:text="eBird"
+       android:textSize="20sp" />
+
+   <Button
+       android:id="@+id/back"
+       android:layout_width="180dp"
+       android:layout_height="50dp"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentRight="true"
+       android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+         android:layout_marginBottom="5dp"
+       android:layout_toRightOf="@+id/eb"
+       android:background="#756454"
+       android:text="Back"
+       android:textSize="20sp" />
+ 
+</RelativeLayout>

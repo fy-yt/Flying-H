@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#a78a6c">
+
+    <ImageButton
+        android:id="@+id/button_map"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+       android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/yuandong1" />
+
+    <ImageButton
+        android:id="@+id/button_sort"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/button_map"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/hongtou1" />
+
+    <ImageButton
+        android:id="@+id/button_intent"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+           android:layout_margin="10dp"
+        android:layout_below="@+id/button_map"
+        android:background="@drawable/huilan1" />
+
+    <ImageButton
+        android:id="@+id/button_help"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+           android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button_map"
+        android:background="@drawable/shanmaque1" />
+
+    <ImageButton
+        android:id="@+id/button_compass"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/button_help"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/bei1" />
+
+    <ImageButton
+        android:id="@+id/button_mocking"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/button_compass"
+        android:layout_alignLeft="@+id/button_compass"
+        android:layout_marginBottom="10dp"
+           android:layout_marginRight="10dp"
+                      android:layout_marginTop="10dp"
+        android:background="@drawable/zongtou1" />
+
+</RelativeLayout>

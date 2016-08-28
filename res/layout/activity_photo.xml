@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <Button
+        android:id="@+id/take_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/y"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/y"
+        android:background="@color/background"
+        android:text="开始拍照" 
+             android:shadowColor= "#000000"
+     android:shadowDx="10.0"
+     android:shadowDy="5.0"
+     android:shadowRadius="2.0"
+        android:textColor="#B0A770"
+        android:textStyle="bold"
+           android:textSize="20sp" />
+     <Button
+     android:id="@+id/y"
+     android:layout_width="60dp"
+     android:layout_height="60dp"
+     android:layout_alignParentTop="true"
+     android:layout_centerHorizontal="true"
+     android:background="@drawable/yuandong1" />
+
+  <RelativeLayout
+        android:id="@+id/writeText_img_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"       
+          android:layout_centerHorizontal="true" 
+            android:layout_below="@+id/take_photo"
+>
+ 
+       <ImageView
+     android:id="@+id/picture"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:adjustViewBounds="true"
+     android:contentDescription="@null"
+     android:maxHeight="360dp" />
+
+        <TextView
+            android:id="@+id/writeText_image_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:padding="4dp"
+            android:textColor="#000000"
+            android:shadowColor="#ffffff"
+            android:shadowRadius="3.0"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+ <Button
+     android:id="@+id/choose_from_album"
+     android:layout_width="wrap_content"
+     android:layout_height="60dp"
+     android:layout_alignParentRight="true"
+     android:layout_alignParentTop="true"
+     android:layout_toRightOf="@+id/y"
+     android:background="@color/background"
+     android:text="进入相册" 
+       android:textColor="#B0A770"
+            android:textStyle="bold"
+     android:textSize="20sp" 
+     android:shadowColor= "#000000"
+     android:shadowDx="10.0"
+     android:shadowDy="5.0"
+     android:shadowRadius="2.0"/>
+
+ <Button
+     android:id="@+id/share"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_above="@+id/back"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentRight="true"
+     android:layout_margin="5dp"
+     android:background="#B0A770"
+     android:text="保 存 并 分 享"
+     android:textColor="#ffffff"
+     android:textSize="25sp" />
+
+ <EditText
+     android:id="@+id/writeText_et"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_above="@+id/share"
+     android:layout_alignParentLeft="true"
+     android:background="@null"
+     android:ems="10"
+     android:hint="点击此处在图片上添加备注" />
+
+<TextView
+    android:id="@+id/n"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/share"
+    android:layout_alignParentBottom="true"
+    android:text="会降低画质保存至手机根目录"
+    android:textColor="#756454"
+    android:textStyle="italic" />
+
+<Button
+    android:id="@+id/back"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignRight="@+id/share"
+    android:background="@color/background"
+    android:shadowColor="#ffffff"
+    android:shadowDx="10.0"
+    android:shadowDy="5.0"
+    android:shadowRadius="1.0"
+    android:text="Back"
+    android:textSize="20sp" />
+
+</RelativeLayout>

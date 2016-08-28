@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#535875" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/back"
+        android:text="@string/web_notice"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="ENTER"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/jilu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/n"
+        android:layout_marginTop="37dp"
+        android:layout_toLeftOf="@+id/back"
+        android:background="#535875"
+        android:text="中国观鸟记录\n中心"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#535875"
+        android:shadowColor="#ffffff"
+        android:shadowDx="10.0"
+        android:shadowDy="5.0"
+        android:shadowRadius="2.0"
+        android:text="BACK"
+        android:textSize="30sp" />
+
+ 
+
+    <Button
+        android:id="@+id/obi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/back"
+        android:layout_alignRight="@+id/n"
+        android:layout_marginBottom="24dp"
+        android:background="#535875"
+        android:text="OBI"
+        android:textColor="#9ca9b9"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/niaowang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/obi"
+        android:layout_below="@+id/jilu"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="20dp"
+        android:background="#535875"
+        android:text="鸟网"
+        android:textColor="#9ca9b9"
+        android:textSize="35sp" />
+
+   <Button
+       android:id="@+id/xeno"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/niaowang"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="27dp"
+       android:background="#535875"
+       android:text="xeno"
+       android:textColor="#000000"
+       android:textSize="38sp" />
+
+   <Button
+       android:id="@+id/guanniao"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_above="@+id/obi"
+       android:layout_alignParentRight="true"
+       android:layout_marginBottom="26dp"
+       android:layout_marginRight="26dp"
+       android:background="#535875"
+       android:text="中国观鸟"
+       android:textColor="#ffffff"
+       android:textSize="30sp" />
+
+</RelativeLayout>

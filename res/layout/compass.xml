@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <ImageView
+           android:id="@+id/compass_img"
+           android:layout_width="320dp"
+           android:layout_height="320dp"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           android:src="@drawable/bei1" />
+
+      <Button
+          android:id="@+id/back"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="8dp"
+          android:background="@color/background"
+          android:shadowColor="#000000"
+          android:shadowDx="10.0"
+          android:shadowDy="5.0"
+          android:shadowRadius="2.0"
+          android:text="BACK"
+          android:textColor="#ffffff"
+          android:textSize="30sp" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true"
+           android:layout_margin="10dp"
+          android:text="@+string/compass_notice"
+          android:textColor="#a76646" />
+    
+ </RelativeLayout>
